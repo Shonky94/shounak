@@ -7,7 +7,7 @@ const projects = [
     title: "Indian Sign Language Translator",
     description: "The Indian Sign Language Translator is a real-time application that translates Indian Sign Language gestures into text, enabling seamless communication between the hearing-impaired and others. Built with OpenCV and Mediapipe, the system uses a custom-trained deep learning model to recognize hand gestures. The model is capable of interpreting multiple signs, offering an accessible and interactive interface for users. The project emphasizes inclusivity by helping bridge communication gaps through AI-driven sign language recognition.",
     media:"image",
-    mediaSrc: "data/isl.png",
+    mediaSrc: "/data/isl.png",
     link: "https://github.com/Shonky94/Indian-Sign-Language-Detection"
   },
   {
