@@ -10,6 +10,7 @@ import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 const App = () => {
   return (
     <Router>
+      <main>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -20,6 +21,7 @@ const App = () => {
 
       </Routes>
       <Footer />
+      </main>
     </Router>
   );
 };
