@@ -5,7 +5,7 @@ import Projects from './components/Projects';
 import Resume from './components/Resume';
 import Home from './components/Home';
 import Footer from './components/Footer';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 const App = () => {
   return (
@@ -16,10 +16,12 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/resume" element={<Resume />} />
+        <Route path="*" element={<div>Page Not Found</div>} />
+
       </Routes>
       <Footer />
     </Router>
   );
-}
+};
 
 export default App;
