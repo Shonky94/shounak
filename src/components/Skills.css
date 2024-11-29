@@ -1,0 +1,80 @@
+.skills {
+    padding: 50px 20px;
+    text-align: center;
+    background: radial-gradient(circle at center, #9946e7,#000000,#7070de);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .skills .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .skills .skill {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 120px;
+    height: 120px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  }
+  
+  .skills .skill:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .skills .skill img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  .skills .skill p {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+    color: #fff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .skills h2 {
+      font-size: 2rem;
+    }
+  
+    .skills .skill {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .skills .skills-grid {
+      gap: 10px;
+    }
+  
+    .skills .skill {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  

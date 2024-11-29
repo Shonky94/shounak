@@ -1,0 +1,33 @@
+.resume-container {
+    padding: 20px;
+    text-align: center;
+    /* background-color: #f4f6f8; */
+    min-height: 100vh;
+  }
+  
+  .resume-image {
+    margin: 30px 0;
+  }
+  
+  .resume-img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .download-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+  }
+  
+  .download-link:hover {
+    background-color: #2980b9;
+  }
+  

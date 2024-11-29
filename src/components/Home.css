@@ -1,0 +1,174 @@
+/* Home Page */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  background: url('./data/background.jpg') no-repeat center center fixed; /* Background image */
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.intro-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap; /* Enable wrapping for responsiveness */
+  background: transparent;
+  margin-top: 100px;
+}
+
+.intro-left {
+  flex: 1;
+  text-align: center; /* Center align for smaller screens */
+  background: transparent;
+  color: white;
+  text-shadow: black;
+  padding: 10px; /* Add some padding for spacing */
+}
+
+.intro-left h2 {
+  font-size: 4rem; /* Adjust font size for responsiveness */
+  text-align: center;
+}
+
+.intro-left p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.intro-right {
+  flex: 1;
+  text-align: center; /* Center align for smaller screens */
+  background: transparent;
+  padding: 10px; /* Add some padding for spacing */
+}
+
+.profile-image {
+  width: 300px; /* Adjust size for smaller screens */
+  height: 300px; /* Adjust size for smaller screens */
+  margin-right: 0; /* Remove margin for smaller screens */
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.about-me {
+  margin-top: 50px;
+  background: transparent;
+  color: white;
+  text-align: center; /* Center align text for smaller screens */
+  padding: 10px; /* Add some padding for better readability */
+}
+
+.about-me h2 {
+  font-size: 2.5rem;
+}
+
+.about-me p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.social-links-section {
+  margin-top: 50px;
+  background-color: white;
+  border-radius: 50px;
+  padding: 20px 40px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.social-links-section h3 {
+  font-size: 1.2rem;
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Enable wrapping for smaller screens */
+  gap: 10px; /* Adjust gap for better spacing */
+}
+
+.social-links a {
+  color: black; /* Adjusted for better contrast */
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #3498db;
+}
+
+.social-logo {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  margin: 0 5px;
+  transition: transform 0.3s ease;
+}
+
+.social-logo:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .intro-left h2 {
+    font-size: 2.5rem; /* Reduce font size */
+  }
+
+  .intro-left p {
+    font-size: 1rem;
+  }
+
+  .profile-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-me h2 {
+    font-size: 2rem;
+  }
+
+  .about-me p {
+    font-size: 0.9rem;
+  }
+
+  .social-links-section {
+    padding: 15px 20px;
+  }
+
+  .social-links-section h3 {
+    font-size: 1rem;
+  }
+
+  .social-links a {
+    font-size: 1rem;
+  }
+
+  .social-links {
+    gap: 5px; /* Compact spacing */
+  }
+
+  .social-logo {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro-section {
+    flex-direction: column; /* Stack elements vertically */
+  }
+
+  .profile-image {
+    margin: 0 auto; /* Center the profile image */
+  }
+
+  .social-links-section {
+    padding: 10px 15px;
+  }
+}

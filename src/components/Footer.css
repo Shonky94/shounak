@@ -1,0 +1,63 @@
+/* Footer Styles */
+footer {
+  background: linear-gradient(to right, #ffffff, #62a5b9);
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  margin-top: auto; /* Ensures the footer stays at the bottom */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .social-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Ensure the links wrap on smaller screens */
+  margin: 10px 0;
+}
+
+footer .social-links a {
+  color: #fff;
+  margin: 5px 10px; /* Add some vertical margin for smaller screens */
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+  color: #000000;
+}
+
+/* Ensure the app container grows with the page */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-bottom: 0; /* Remove extra padding */
+}
+
+body {
+  padding-bottom: 0; /* Remove extra padding */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  footer {
+    padding: 15px;
+  }
+
+  footer .social-links a {
+    font-size: 0.9rem; /* Reduce font size for smaller screens */
+    margin: 5px; /* Adjust spacing for compact view */
+  }
+}
