@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['pdfjs-dist'], // Replace 'pdfjs-dist' with the exact module if identified.
+      external: ['react-router-dom'], // Add other problematic modules here if needed
     },
   },
 });
