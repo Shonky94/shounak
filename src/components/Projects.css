@@ -46,7 +46,7 @@
 .project-card a:hover {
   text-decoration: none;
   transform: scale(1.5em);
-  color: yellow;
+  color: rgb(0, 0, 0);
 }
 
 /* Responsive Design */
