@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import { Type } from 'lucide-react';
+// import { Type } from 'lucide-react';
 
 const About = () => {
   return (
